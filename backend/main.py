@@ -10,12 +10,16 @@ from database_refresh_utils import seed_database, clear_database
 from dotenv import load_dotenv
 import os
 
-
-load_dotenv(override=True)
-app = FastAPI()
-
 # init table
 create_table()
+
+# load .env
+load_dotenv(override=True)
+
+# init app
+app = FastAPI()
+
+
 
 # CORS
 app.add_middleware(
