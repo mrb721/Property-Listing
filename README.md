@@ -10,9 +10,12 @@ The frontend and backends are run on Docker containers. You can use any of the f
     
     - `docker compose up --build` runs the application quickly if cache exists
     
-    - `docker compose up --build --no-cache` runs without cache, useful if part of the previous build isn't needed
+    - `docker compose build --no-cache && docker compose up` runs without cache, useful if part of the previous build isn't needed
 
     - Optionally, you can also add the `-d` flag to either of the above commands in terminal to regain control of it instead of keeping logs open. In this case, you can use `docker compose logs -f` to view logs again.
+
+To utilize AI features, you must provide your own API key. A file, `.env.example` is provided as a format for the variable, and can be copied over to your local `.env` via: `cp .env.example .env`
+
 
 Once the docker containers are running, access the web application via `localhost:3000` in your browser of choice.
 
