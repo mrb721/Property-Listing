@@ -1,6 +1,6 @@
 # Property Listings App - Minhazur Bhuiyan
 
-## [Click for Happy-Path Test] (https://drive.google.com/file/d/1IbconYaBmmKIHJmd1U4IjZcOl_9lw8GJ/view?usp=drive_link)
+## [Click Here For Video Demo](https://tinyurl.com/MinhazurPropertyListings) 
 
 ## Edge case
 One edge case in the UI is inputting a non-float/int as a price, but the form protects against it, as well as the typing is enforced downstream.
